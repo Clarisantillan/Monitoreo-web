@@ -176,13 +176,5 @@ def index():
     return render_template("index.html")
 
 if __name__ == "__main__":
-    
-   
 import uvicorn
-    uvicorn.run(app, host=
-    uvicorn.run(app,
-
-    uvicorn
-
-   
-"0.0.0.0", port=10000)
+    uvicorn.run(app, host="0.0.0.0", port=10000)
