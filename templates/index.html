@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Monitor de Páginas</h1>
-    <form method="post">
+    <form method="post" onsubmit="showMonitoringMessage();">
         <label for="site">Selecciona el sitio a monitorear:</label>
         <select name="site" required>
             <option value="afa">AFA</option>
@@ -19,9 +19,17 @@
         <label for="to_email">Correo electrónico de destino:</label>
         <input type="email" name="to_email" required><br>
         <button type="submit">Iniciar Monitoreo</button>
-    </form>
+      </form>
+      <div id="monitoring-message" style="display: none;">La web está siendo monitoreada. Por favor, espera...</div>
     <footer>
         <p>Sitio creado por Clara Santillán, Copyright 2023</p>
     </footer
+        <script>
+     function showMonitoringMessage() {
+        var messageElement = document.getElementById("monitoring-message");
+        messageElement.style.display = "block";
+    }
+</script>
+
 </body>
 </html>
