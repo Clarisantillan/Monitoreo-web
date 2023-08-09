@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Monitor de Páginas</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='styles.css') }}">
 </head>
 <body>
     <h1>Monitor de Páginas</h1>
@@ -22,6 +22,5 @@
     <footer>
         <p>Sitio creado por Clara Santillán, Copyright 2023</p>
     </footer
-</footer>
 </body>
 </html>
