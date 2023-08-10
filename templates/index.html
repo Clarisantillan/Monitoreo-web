@@ -3,7 +3,11 @@
 <head>
     <title>Monitor de Páginas</title>
     <link href="./static/styles.css" rel="stylesheet"/>
-
+   <script>
+     function showMonitoringMessage() {
+        var messageElement = document.getElementById("monitoring-message");
+        messageElement.style.display = "block";}
+   </script>
 </head>
 <body>
     <h1>Monitor de Páginas</h1>
@@ -23,11 +27,6 @@
       <div id="monitoring-message" style="display: none;">La web está siendo monitoreada. Por favor, espera...</div>
     <footer>
         <p>Sitio creado por Clara Santillán, Copyright 2023</p>
-    </footer
-    <script>
-     function showMonitoringMessage() {
-        var messageElement = document.getElementById("monitoring-message");
-        messageElement.style.display = "block";}
-    </script>
+    </footer>
 </body>
 </html>
