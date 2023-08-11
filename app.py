@@ -17,12 +17,12 @@ from email.mime.text import MIMEText
 app = Flask(__name__)
 
 # Configuración del correo electrónico y el servidor SMTP
-from_email = "clara.santillan.01@gmail.com"
-to_email = "clarisantillan@icloud.com"
+from_email = "emaildestinatario"
+to_email = "emialdestino"
 smtp_server = "smtp.gmail.com"
 smtp_port = 587
-smtp_username = "clara.santillan.01@gmail.com"
-smtp_password = "kjxpppupshsvndgs"
+smtp_username = "usuario@gmail.com"
+smtp_password = "contraseñadeapp"
 
 # URLs de los sitios web
 sites = {
